@@ -18,3 +18,12 @@ if(typeof window.localStorage !== "undefined") {
 } else {
   // use normal cookies
 }
+
+/* CONSOLE
+output a basic message to the console */
+console.log("hello there");
+
+/* output a variable in the console */
+var msg = "this is from a variable";
+
+console.log(msg);
