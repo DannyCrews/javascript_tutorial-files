@@ -54,6 +54,55 @@ document.querySelectorAll(".dropcap, .huge");
 // get all paragraphs that have a class
 document.querySelectorAll("p[class]");
 
+/* The attribute node is within the element node. It is NOT considered to be a child of that node */
+/* attribute methods are:
+    getAttribute()
+    setAttribute()
+    removeAttribute()
+    hasAttribute()
+*/
+
+/* JavaScript used to get the class value of our image */
+// first we target the element and check if it has a class on it
+if(document.getElementById("plc").hasAttribute("class")) {
+
+  // after we know a class exists, we can get the value
+  document.getElementById("plc").getAttribute("class");
+  // this would return the value of "show", which is a class on our image
+}
+
+/* JavaScript used to set the class attribute of our image */
+// replace the current class with a value of "hidden"
+document.getElementById("plc").setAttribute("class", "hidden");
+// add a new attribute to the image
+document.getElementById("plc").setAttribute("title", "we moved this element offscreen");
+
+/* JavaScript used to remove the class value of our image */
+// first we target the element and check to see if it has a class on it
+if(document.getElementById("plc").hasAttribute("class")) {
+
+  // after we know a class exists, we can then remove it
+  document.getElementById("plc").removeAttribute("class");
+}
+
+/* Using innerHTML */
+// targeting the text node
+document.getElementById("target-area").innerHTML;
+
+// changing the content in the text node - you can jump straight to this.
+document.getElementById("target-area").innerHTML = "<p>hello world</p>";
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

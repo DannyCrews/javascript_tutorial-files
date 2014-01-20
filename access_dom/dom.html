@@ -1,12 +1,32 @@
-=<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/styles.css">
   <title>DOM Examples</title>
 </head>
 <body>
-<div id="header">
-  <h1><a href="/" id="homelink">Accessing the DOM</a></h1>
+  <div id="header">
+    <h1><a href="/" id="homelink">Accessing the DOM</a></h1>
   </div>
 
+  <h2>Using getElementsByTagName</h2>
+  <p>Content paragraph</p>
+  <p>Content paragraph</p>
+  <p>Content paragraph</p>
+
+  <p class="dropcap huge">Content paragraph</p><!--two classes -->
+
+  <p id="e" class="dropcap">Content <span class="huge">paragraph</span></p>
+  <p class="dropcap">Content paragraph</p>
+
+  <img src="images/placeholder.png" class="show" alt="placeholder image" id="plc">
+
+  <div id="target-area">
+    <p>This is our target text</p>
+  </div>
+  
+
+  <script src="js/dom_examples.js"></script>
 </body>
 </html>
