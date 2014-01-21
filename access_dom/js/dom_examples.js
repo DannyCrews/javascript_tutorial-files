@@ -92,6 +92,33 @@ document.getElementById("target-area").innerHTML;
 // changing the content in the text node - you can jump straight to this.
 document.getElementById("target-area").innerHTML = "<p>hello world</p>";
 
+/* moving around the DOM using:
+  parentNode
+  previousSibling
+  nextSibling
+  firstChild
+  lastChild
+*/
+
+/* Targeting a parentNode */
+// target the "about" link and apply a class to its parent list item
+document.getElementById("about").parentNode.setAttribute("class", "active");
+
+/* adding a class to previous and nextSibling nodes */
+// get "about" parent, then its previous sibling and apply a class
+document.getElementById("about").parentNode.previousSibling.setAttribute("class", "previous");
+
+// get "about" parent, then its next sibling and apply a class
+document.getElementById("about").parentNode.nextSibling.setAttribute("class", "next");
+
+/* Adding a class to the first and last items in our Nav */
+// travel to the first node and add the class
+document.getElementById("nav").firstChild.setAttribute("class", "first");
+
+// travel to the last node and add a class
+document.getElementById("nav").lastChild.setAttribute("class", "last");
+
+
 
 
 
