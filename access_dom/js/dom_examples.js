@@ -118,6 +118,39 @@ document.getElementById("nav").firstChild.setAttribute("class", "first");
 // travel to the last node and add a class
 document.getElementById("nav").lastChild.setAttribute("class", "last");
 
+/* HTML example to create a new element */
+// store the target area to a variable to keep things neat
+var targetArea = document.getElementById("target-area");
+
+// create our <p> element
+var p = document.createElement("p");
+
+// create a text node inside the <p>. note that we're using a variable "p" here
+var snippet = p.createTextNode("this was a generated paragraph");
+
+// insert our generated paragraph into the DOM
+targetArea.appendChild(snippet);
+
+/* JavaScript for removing an element from the DOM using removeChild */
+// store the target area to a variable to keep things neat
+var targetArea = document.getElementById("target-area");
+
+// store the tagline into a variable as well
+var tagline = document.getElementById("tagline");
+
+// remove it from the DOM
+targetArea.removeChild(tagline);
+
+
+
+
+
+
+
+
+
+
+
 
 
 
