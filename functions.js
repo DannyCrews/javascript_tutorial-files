@@ -72,6 +72,18 @@ function startle(polite, rude){
 startle("thank you", "you stink");
 
 
+/* grouping similar functions - functions stored in an object are called methods\ */
+var addressBookMethods = {
+  sayHello: function(message){
+    return message;
+  },
+  startle: function(){
+    alert(addressBookMethods.sayHello("hey there, called from a method"));
+  }
+}
+/* call the function */
+addressBookMethods.startle();
+
 
 
 
