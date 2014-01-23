@@ -45,3 +45,29 @@ UNSHIFT
 var unshiftDinner = dinner.unshift("Nacho Cheese-wich");
 /* alert it */
 alert("unShift: " + dinner); // meatball
+
+
+/* pop - method reserved for removing and returning the last item in an array */
+/* remove an item from the end of an array */
+var popDinner = dinner.pop();
+/* alert it */
+alert("pop: " + popDinner) // Oatmeal and banana on rye
+
+
+/* concat - copying and combining multiple arrays into a single array */
+/* concatenate all arrays in one */
+var favoriteSandwiches = breakfast.concat(lunch, dinner);
+/* save HTML body element to a variable */
+var target = document.getElementsByTagName("body")[0];
+/* output the array values in the HTML */
+target.innerHTML = favoriteSandwiches.join("<br>");
+
+
+/* sort - output alphabetical or custom sorting of array items */
+/* sort the concatenated array alphabetically */
+var sortFavorites = favoriteSandwiches.sort();
+/* overwrite the original outputted list with a sorted one */
+target.innerHTML = sortFavorites.join("<br>");
+
+
+
