@@ -1,13 +1,10 @@
 /* push - Adding items to an array */
 /* declare breakfast normally */
 var breakfast = ["Egg, Sausage and Cheese", "Egg Whites on Flatbread", "Egg and Cheese"];
-
-/* add a jalepeno bagel and ham to the breakfast array */
-breakfast.push("Jalepeno Bagel and Ham");
-
+/* add a jalapeno bagel and ham to the breakfast array */
+breakfast.push("Jalapeno Bagel and Ham");
 /* alert the whole array */
 alert(breakfast);
-
 /* pull out the newest array member */
 alert(breakfast[3]);
 
@@ -26,4 +23,25 @@ alert('join: ' + joinBreakfast);
 
 
 /* slice - output a range of items in an array */
+/* slice lunch, start at 1 and end at 3 (doesn't include 3) */
+var sliceLunch = lunch.slice(1, 3);
+/* clean and alert lunch */
+var joinLunch = sliceLunch.join(" & ");
 
+alert("slice/join: " + joinLunch); // Grilled Cheese & Peanut Butter and Jelly
+
+/* shift and unshift - method used to add and remove items to the beginning of an array */
+/*
+SHIFT
+*/
+/* remove the first element of dinner */
+var shiftDinner = dinner.shift();
+/* alert it */
+alert(" shift: " + shiftDinner) // meatball
+/*
+UNSHIFT
+*/
+/* add an item to the beginning of the array */
+var unshiftDinner = dinner.unshift("Nacho Cheese-wich");
+/* alert it */
+alert("unShift: " + dinner); // meatball
