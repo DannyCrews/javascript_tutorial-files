@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Arrays 2</title>
+</head>
+<body>
+    <script language="javascript" type="text/javascript">
+        var grades = [85, 92, 70, 63, 55, 92, 88, 77, 91, 91];
+        document.write(grades[9]);
+        document.write("<br/>" + grades.length + "<br/>");
+        grades.push(100, 63);
+        var poppedOff = grades.pop();
+        
+        for(x in grades)
+        {
+            document.write("Iteration: " + x);
+            document.write("<br/>" + grades[x] + "<br/>");
+        }
+        
+        document.write("Popped Off:" + poppedOff);
+        
+        var names= ["Phil", "Bob", "Tom", "Oscar", "Mary", "Jane"];
+        names.sort();
+        
+        for(var y =0; y < names.length; y++)
+        {
+            document.write(names[y] + "<br/>");
+        }
+        
+    </script>
+</body>
+</html>

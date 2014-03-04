@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Basic Arrays</title>
+</head>
+<body>
+    <script language="javascript" type="text/javascript">
+        //Standard Array
+        var firstNames = new Array();   //Instantiation of an Array() object
+        firstNames[0] = "Mark";
+        firstNames[1] = "Colleen";
+        firstNames[2] = "Brett";
+        firstNames[3] = "Joan";
+        firstNames[4] = "Rick";
+        
+        //Condenced Method
+        var animals = new Array("dog", "cat", "mouse", "hampster", "toad");
+        
+        //Literal Array
+        var companies = ["Apple", "Google", "Cnet", "Udemy", "GE"];
+        
+        //alert(firstNames[3]);
+        //alert(animals[0]);
+        //alert(companies[2]);
+        
+        for(var i = 0; i < firstNames.length;i++)
+        {
+            document.write(firstNames[i]);
+            document.write("<br/>");
+        }
+        
+        firstNames[0] = "Herbert";
+        for(var i = 0; i < firstNames.length;i++)
+        {
+            document.write(firstNames[i]);
+            document.write("<br/>");
+        }
+        
+    </script>
+</body>
+</html>
