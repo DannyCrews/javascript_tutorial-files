@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd"
+    >
+<html lang="en">
+<head>
+    <title>Conditionals with Else</title>
+</head>
+<body>
+    <script language="javascript" type="text/javascript">
+        var playerScore= 25000;
+        var highScore = 10000;
+        
+        if(playerScore > highScore)
+        {
+            //Player has high schore
+            highScore = playerScore;
+            document.write("You attained the high score!");
+        } else
+        {
+            document.write("You did not attain the high score.");
+        }
+        
+        var numericalGrade= 95;
+        var letterGrade;
+        
+        if(numericalGrade >= 90)
+        {
+            letterGrade = "A";
+        } else if(numericalGrade >= 80)
+        {
+            letterGrade = "B";
+        } else if(numericalGrade >= 70)
+        {
+            letterGrade = "C";
+        } else if (numericalGrade >= 60)
+        {
+            letterGrade = "D";
+        } else
+        {
+            letterGrade= "F";
+        }
+        
+        document.write("<br/>Your grade is " + letterGrade);
+        
+    </script>
+</body>
+</html>

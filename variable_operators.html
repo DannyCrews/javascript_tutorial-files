@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd"
+    >
+<html lang="en">
+<head>
+    <title>Variable Operators</title>
+</head>
+<body>
+    <script language="javascript" type="text/javascript">
+        var operandOne;
+        var operandTwo;
+        operandOne = 125;       //Integer
+        operandTwo = 15.371;    //Floating Point Number
+        
+        document.write(operandOne);
+        document.write("<br/>");
+        document.write(operandTwo);
+        document.write("<br/>");
+        document.write("Addition " + (operandOne + operandTwo));
+        document.write("<br/>");
+        document.write("Subtraction " + (operandOne - operandTwo));
+        document.write("<br/>");
+        document.write("Multiplication " + (operandOne * operandTwo));
+        document.write("<br/>");
+        document.write("Division " + (operandOne/operandTwo));
+        document.write("<br/>");
+        document.write("10 % 3 " + (10 % 3));
+        document.write("<br/>");
+        document.write("11 % 3 " + (11 % 3));
+        operandOne++;       //Increment Operator Add One to the variable;
+        operandTwo--;       //Decrementing One from the variable
+        document.write("<br/>");
+        document.write(operandOne);
+        document.write("<br/>");
+        document.write(operandTwo);
+        /*
+            variable++   <--- PostFix Increment Operator
+            ++variable   <--- PreFix Increment Operator
+         
+            PostFix- The rest of the mathamatical expression is evaluated and then
+            the increment takes place
+            
+            PreFix-  The increment takes place and then the rest of the expression
+            is evaluated
+         */
+        
+        var teamCity;
+        var teamName;
+        
+        teamCity ="New York";
+        teamName= "Yankees";
+        var fullTeamInfo = teamCity + " " + teamName;
+        
+        document.write("<br/>");
+        document.write(fullTeamInfo);
+        
+    </script>
+</body>
+</html>

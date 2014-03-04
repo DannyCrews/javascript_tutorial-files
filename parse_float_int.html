@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd"
+    >
+<html lang="en">
+<head>
+    <title>Display Simple Interest</title>
+</head>
+<body>
+    <script language="javascript" type="text/javascript">
+        var interestRate = prompt("Enter Interest Rate as a decimal" , "");
+        var term = prompt("Enter a number of months to invest", "");
+        var amountInvested = prompt("Amount invested", "");
+        
+        //Convert the strings to values
+        interestRate = parseFloat(interestRate);
+        term = parseInt(term);
+        amountInvested = parseInt(amountInvested);
+        
+        //Convert Interest Rate to Monthly accrual
+        interestRate = interestRate/12;
+        
+        //HINT:  Use Math.round() to round off values
+        // (Math.round()*100)/100 will give you two decimal places
+        
+        for(month = 1; month < term+1 ; month++)
+        {
+            document.write("<strong>Month:</strong> " + month+ "<br>");
+            document.write("Interest Earned: $" + Math.round((interestRate*amountInvested)*100)/100);
+            document.write("<br/>");
+            amountInvested = amountInvested + (interestRate*amountInvested);
+            document.write("Total Money: $" + Math.round(amountInvested*100)/100);
+            document.write("<br/>");
+        }
+    </script>
+</body>
+</html>
