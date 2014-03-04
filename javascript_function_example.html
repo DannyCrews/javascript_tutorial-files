@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Chapter 6 Lab Exercise Solution 2A</title>
+    <script language="javascript" type="text/javascript">
+        function mathProb(x,y,symbol)
+        {
+            switch(symbol)
+            {
+                case "+":
+                    document.write(x + " + " + y + " = " + (x+y));
+                    break;
+                case "-":
+                    document.write(x + " - " + y + " = " + (x-y));
+                    break;
+                case "*":
+                    document.write(x + " * " + y + " = " + (x*y));
+                    break;
+                case "/":
+                    document.write(x + " / " + y + " = " + (x/y));
+            }
+            
+        }
+        
+    </script>
+</head>
+<body>
+    <input type="button" value="Add" onclick="mathProb(25,260,'+')"/>
+    <input type="button" value="Subtract" onclick="mathProb(25,260,'-')" />
+    <input type="button" value ="Multiply"  onclick="mathProb(25,260,'*')"/>
+    <input type="button" value="Divide" onclick="mathProb(25,260,'/')"/>
+</body>
+</html>
